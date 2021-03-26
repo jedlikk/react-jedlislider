@@ -1,10 +1,22 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-jedlislider'
+import JedliSlider, { JedliSlide } from 'react-jedlislider'
 import 'react-jedlislider/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <JedliSlider>
+      <JedliSlide style={{ background: "red", height: "150px" }}>
+        <span>1</span>
+      </JedliSlide>
+      <JedliSlide style={{ background: "green", height: "150px" }}>
+        <span>2</span>
+      </JedliSlide>
+      <JedliSlide style={{ background: "blue", height: "150px" }}>
+        <span>3</span>
+      </JedliSlide>
+    </JedliSlider>
+  )
 }
 
 export default App
