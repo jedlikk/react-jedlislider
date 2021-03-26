@@ -15,12 +15,12 @@ npm install --save react-jedlislider
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-jedlislider'
+import JedliSlider from 'react-jedlislider'
 import 'react-jedlislider/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <JedliSlider />
   }
 }
 ```
