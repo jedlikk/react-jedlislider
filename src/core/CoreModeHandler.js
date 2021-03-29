@@ -9,7 +9,6 @@ const CoreModeHandler = (props) => {
     // Push props of slider to context
     useEffect(() => {
         update(props.sliderConfig);
-        console.log(props)
     }, [props])
 
     // Init right mode
