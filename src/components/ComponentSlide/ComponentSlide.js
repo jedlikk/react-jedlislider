@@ -15,6 +15,7 @@ const JedliSlide = (
         startRotate,
         stopRotate,
         isCloned,
+        index,
         ...rest
     }
 ) => {
@@ -49,11 +50,11 @@ const JedliSlide = (
                 // But ignore cloned slides
                 if (!isCloned) {
                     let newAllSlidesWidth = [...state.allSlidesWidth];
-                    newAllSlidesWidth[rest.index] = slideWidth;
+                    newAllSlidesWidth[index] = slideWidth;
 
                     const newState = { ...state, allSlidesWidth: newAllSlidesWidth }
 
-                    if (state.allSlidesWidth[rest.index] !== slideWidth) {
+                    if (state.allSlidesWidth[index] !== slideWidth) {
                         update(newState)
 
 
@@ -73,14 +74,14 @@ const JedliSlide = (
             // Check if size of slide should be calculated
             if (state.slidesWidth === "equal") {
                 // If true, do it
-                setAllStyles({ ...allStyles, width: _calculateSlidesWidth(state.visibleSlides, state.tracksContainerWidth) + "px" })
+                setAllStyles({ ...allStyles, width: _calculateSlidesWidth(state.visibleSlides, state.tracksContainerWidth) + "px", flex: `0 0 ${_calculateSlidesWidth(state.visibleSlides, state.tracksContainerWidth) + "px"}` })
             }
 
         }
     }, [slideContainer, state])
 
     return (
-        <div ref={slideContainer} className={`jedli-slider ${isCloned ? 'isCloned' : ''} ${className ? className : ''}`} {...rest} style={allStyles}>{rest.children}</div>
+        <div ref={slideContainer} className={`jedli-slide ${isCloned ? 'isCloned' : ''} ${className ? className : ''}`} {...rest} style={allStyles}>{rest.children}</div>
     )
 }
 

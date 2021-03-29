@@ -285,44 +285,44 @@ body {
     display: block;
 }
 .section-examples .example-slide-auto:nth-of-type(1),
-.section-examples .example-slide-auto:nth-of-type(7) {
-    min-width: 200px;
+.section-examples .example-slide-auto:nth-of-type(9) {
+    width: 180px;
+    flex: 0 0 180px;
 }
 .section-examples .example-slide-auto:nth-of-type(2),
-.section-examples .example-slide-auto:nth-of-type(8) {
-    min-width: 250px;
+.section-examples .example-slide-auto:nth-of-type(10) {
+    width: 225px;
+    flex: 0 0 225px;
 }
 .section-examples .example-slide-auto:nth-of-type(3),
-.section-examples .example-slide-auto:nth-of-type(9) {
-    min-width: 150px;
+.section-examples .example-slide-auto:nth-of-type(11) {
+    width: 160px;
+    flex: 0 0 160px;
 }
 .section-examples .example-slide-auto:nth-of-type(4),
-.section-examples .example-slide-auto:nth-of-type(10) {
-    min-width: 215px;
+.section-examples .example-slide-auto:nth-of-type(12) {
+    width: 250px;
+    flex: 0 0 250px;
 }
 .section-examples .example-slide-auto:nth-of-type(5),
-.section-examples .example-slide-auto:nth-of-type(11) {
-    min-width: 180px;
+.section-examples .example-slide-auto:nth-of-type(13) {
+    width: 200px;
+    flex: 0 0 200px;
 }
 .section-examples .example-slide-auto:nth-of-type(6),
-.section-examples .example-slide-auto:nth-of-type(12) {
-    min-width: 230px;
+.section-examples .example-slide-auto:nth-of-type(14) {
+    width: 180px;
+    flex: 0 0 180px;
 }
-.section-examples .example-slide-auto-continuous:nth-of-type(1),
-.section-examples .example-slide-auto-continuous:nth-of-type(5) {
-    min-width: 200px;
+.section-examples .example-slide-auto:nth-of-type(7),
+.section-examples .example-slide-auto:nth-of-type(15) {
+    width: 250px;
+    flex: 0 0 250px;
 }
-.section-examples .example-slide-auto-continuous:nth-of-type(2),
-.section-examples .example-slide-auto-continuous:nth-of-type(6) {
-    min-width: 250px;
-}
-.section-examples .example-slide-auto-continuous:nth-of-type(3),
-.section-examples .example-slide-auto-continuous:nth-of-type(7) {
-    min-width: 150px;
-}
-.section-examples .example-slide-auto-continuous:nth-of-type(4),
-.section-examples .example-slide-auto-continuous:nth-of-type(8) {
-    min-width: 215px;
+.section-examples .example-slide-auto:nth-of-type(8),
+.section-examples .example-slide-auto:nth-of-type(16) {
+    width: 180px;
+    flex: 0 0 180px;
 }
 .section-examples .example-slide::before {
     content: "";

@@ -64,7 +64,7 @@ const JedliContinuous = () => {
                         {React.cloneElement(children, { index: index, startRotate: startRotate, stopRotate: stopRotate })}
                     </React.Fragment>
                 )) : ''}
-                {/* If rotating is set at true, clone all slides */}
+                {/* If rotating is set at true and slidesWidth is set to 'equal', clone all slides */}
                 {state.children && isRotating ? state.children.map((children, index) => (
                     <React.Fragment key={index}>
                         {/* Check if slider should rotate. And if so, add all slides twice, but with special attribute that they are cloned to cloned slides */}
