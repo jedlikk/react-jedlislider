@@ -4,7 +4,7 @@
   
   
 
-![](https://img.shields.io/badge/version-1.0.0-blue.svg)[![NPM](https://img.shields.io/npm/v/react-jedlislider.svg)](https://www.npmjs.com/package/react-jedlislider)  [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![](https://img.shields.io/badge/version-1.0.2-blue.svg)[![NPM](https://img.shields.io/npm/v/react-jedlislider.svg)](https://www.npmjs.com/package/react-jedlislider)
 
   
 
@@ -43,7 +43,7 @@ Because it’s easy to use, modern and will have all options that you want. Some
 
 ## What's new?
 
-### v. 1.0.0
+### v. 1.0.2
 
 - React version of jedliSlider
 
