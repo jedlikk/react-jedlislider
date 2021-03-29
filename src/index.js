@@ -38,7 +38,7 @@ JedliSlider.defaultProps = {
   tag: 'div',
   mode: "continuous",
   slidesWidth: "equal",
-  speed: 20,
+  speed: 100,
   visibleSlides: 1,
   overflow: "hidden",
   pauseOnHover: false,

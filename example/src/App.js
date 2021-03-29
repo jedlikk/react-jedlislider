@@ -5,7 +5,7 @@ import 'react-jedlislider/dist/index.css'
 
 const App = () => {
   return (
-    <JedliSlider slidesWidth="auto">
+    <JedliSlider>
       <JedliSlide style={{ width: "700px", background: "red", height: "150px" }}>
         <span>1</span>
       </JedliSlide>
@@ -18,6 +18,7 @@ const App = () => {
       <JedliSlide style={{ width: "900px", background: "black", height: "150px" }}>
         <span>4</span>
       </JedliSlide>
+
     </JedliSlider>
   )
 }

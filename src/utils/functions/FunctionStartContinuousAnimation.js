@@ -25,9 +25,16 @@ const _startContinuousAnimation = (context, track) => {
     }
 
     // Add styles for animation purposes to track
-    // If mode == continuous, options.speed is speed for every px in screen width
+    // If mode == continuous, options.speed is speed for every px of all slides width
 
-    const speed = context.speed * window.innerWidth
+    let widthOfAllSlides = 0;
+
+    context.allSlidesWidth.forEach(slideWidth => {
+        slideWidth ? widthOfAllSlides += slideWidth : '';
+    })
+
+    const speed = widthOfAllSlides / context.speed * 1000;
+
     const continuousSpeed = speed / 1000 + "s";
     track.style.animationDuration = continuousSpeed;
     track.style.animationTimingFunction = context.easing;

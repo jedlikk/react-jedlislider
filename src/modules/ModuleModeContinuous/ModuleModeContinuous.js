@@ -32,6 +32,9 @@ const JedliContinuous = () => {
 
     // Function to start rotation of slider
     const startRotate = () => {
+        // Call function to start animation
+        _startContinuousAnimation(state, track.current)
+
         // Check if is already rotating
         if (isRotating) {
             return false
@@ -40,8 +43,7 @@ const JedliContinuous = () => {
         // If is not rotating, start it
         setIsRotating(true);
 
-        // Call function to start animation
-        _startContinuousAnimation(state, track.current)
+
     }
 
     const stopRotate = () => {

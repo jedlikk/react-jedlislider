@@ -24,6 +24,12 @@
             display: none;
         }
 
+        &-overflow {
+            &-hidden {
+                overflow: hidden;
+            }
+        }
+
         &-mode {
             &-continuous {
                 .jedli {
