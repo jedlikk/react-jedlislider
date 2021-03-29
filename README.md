@@ -61,7 +61,7 @@ npm install --save react-jedlislider
 
   
 
-## Usage
+## Basic Usage
 
   
 
@@ -79,24 +79,60 @@ import  'react-jedlislider/dist/index.css'
 
 class  Example  extends  Component  {
 
-render()  {
+  render()  {
 
-return  (
+    return  (
 
-<JedliSlider>
+    <JedliSlider>
 
-<JedliSlide>Your slide 1</JedliSlide>
+      <JedliSlide>Your slide 1</JedliSlide>
 
-<JedliSlide>Your slide 2</JedliSlide>
+      <JedliSlide>Your slide 2</JedliSlide>
 
-<JedliSlide>Your slide 3</JedliSlide>
+      <JedliSlide>Your slide 3</JedliSlide>
 
-</JedliSlider>
+    </JedliSlider>
 
-)
+    )
 
+  }
 }
 
+```
+
+## Usage with custom settings
+
+```jsx
+
+import React,  { Component }  from  'react'
+
+  
+
+import JedliSlider,  { JedliSlide }  from  'react-jedlislider'
+
+import  'react-jedlislider/dist/index.css'
+
+  
+
+class  Example  extends  Component  {
+
+  render()  {
+
+    return  (
+
+    <JedliSlider speed={125} slidesWidth='auto'>
+
+      <JedliSlide>Your slide 1</JedliSlide>
+
+      <JedliSlide>Your slide 2</JedliSlide>
+
+      <JedliSlide>Your slide 3</JedliSlide>
+
+    </JedliSlider>
+
+    )
+
+  }
 }
 
 ```

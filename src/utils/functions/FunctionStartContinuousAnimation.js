@@ -4,8 +4,6 @@
  * @param {ref} track - track element to animate slides
  */
 const _startContinuousAnimation = (context, track) => {
-    console.log(context)
-
     // Check if there should be pause on hover
     if (context.pauseOnHover) {
         track.classList.add("jedli-hover-pause");
@@ -14,7 +12,7 @@ const _startContinuousAnimation = (context, track) => {
     // Set direction of animation
     switch (context.direction) {
         case "ltr":
-            track.style.animationDirection = "normal";
+            track.style.animationDirection = "reverse";
 
             break;
 
