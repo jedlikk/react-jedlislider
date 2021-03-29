@@ -4,7 +4,7 @@
   
   
 
-![](https://img.shields.io/badge/version-0.12.19-blue.svg)[![NPM](https://img.shields.io/npm/v/react-jedlislider.svg)](https://www.npmjs.com/package/react-jedlislider)  [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![](https://img.shields.io/badge/version-1.0.0-blue.svg)[![NPM](https://img.shields.io/npm/v/react-jedlislider.svg)](https://www.npmjs.com/package/react-jedlislider)  [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
   
 
