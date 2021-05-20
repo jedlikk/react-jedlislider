@@ -43,11 +43,19 @@ Because it’s easy to use, modern and will have all options that you want. Some
 
 ## What's new?
 
-### v. 1.0.2
+### v. 1.1.2
+
+- Added resizeHandler so slider will recalculate if should rotate when width of slide change (usefull when width of slide is based on lazy loading image)
+
+  
+  
+## Previous update:
+
 
 - React version of jedliSlider
 
   
+
 
 ## Install
 

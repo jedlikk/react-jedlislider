@@ -37,7 +37,7 @@ const JedliSlide = (
         return slideWidth;
     }
 
-    useEffect(() => {
+    const init = () => {
         if (slideContainer.current) {
             // If ref exists
 
@@ -78,7 +78,28 @@ const JedliSlide = (
             }
 
         }
+    }
+
+    useEffect(() => {
+        init();
     }, [slideContainer, state])
+
+    useEffect(() => {
+        if (slideContainer.current) {
+            // Check if there is enough slides to rotate
+            // If slidesWidth is set to auto, add resize listener so the library will auto update itself if size of elements inside change
+            const resizeObserver = new ResizeObserver(entries => {
+                for (let entry of entries) {
+                    if (entry.contentBoxSize) {
+                        init();
+                    }
+                }
+            });
+
+            resizeObserver.observe(slideContainer.current);
+        }
+
+    }, [slideContainer.current])
 
     return (
         <div ref={slideContainer} className={`jedli-slide ${isCloned ? 'isCloned' : ''} ${className ? className : ''}`} {...rest} style={allStyles}>{rest.children}</div>
